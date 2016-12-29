@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:gravity="center_vertical|left"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:id="@+id/cont_item_root"
+    android:background="@color/rekaa"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/image_item_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_tonality_black_36dp"
+        android:tint="@color/colorPrimary"/>
+
+    <TextView
+        android:transitionName="@string/transition_title"
+        android:id="@+id/lbl_item_text"
+        android:layout_width="84dp"
+        android:layout_height="45dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif"
+        android:text="Title"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:layout_weight="0.08"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/lbl_item_sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lbl_item_text"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="3dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:text="SubTitle"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:layout_weight="0.36"
+        android:textColor="@color/subtitle_color"/>
+
+</LinearLayout>
